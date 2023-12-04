@@ -4,7 +4,7 @@ The goal for our project is to create a 2D platformer that anyone can pick up an
 
 
 # Roles
-- Project Manager, Sophie Hews, sophieh8, [Digital Portfolio](https://codermerlin.academy/users/sophie-hews/Digital%20Portfolio/index.html)
+- Project Manager, Sophie Hews, @sophieh8, [Digital Portfolio](https://codermerlin.academy/users/sophie-hews/Digital%20Portfolio/index.html)
 - Product Manager, Faraz Piracha,
 - Release Manager, Matthew Batton,
 - QA Analyst, Nusaiba Afreen

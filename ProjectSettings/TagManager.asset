@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2911511583
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 2823798697
+    locked: 0
+  - name: GameLayer
+    uniqueID: 372039963
+    locked: 0

@@ -133,11 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.19727
+      value: 83.47
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.1
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.z
@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 65444344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.52001, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 66, y: 1.9, z: 0}
   m_LocalScale: {x: 5.714859, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -274,11 +274,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 65444344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &71118215
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71118216}
   - component: {fileID: 71118217}
-  - component: {fileID: 71118218}
+  - component: {fileID: 71118219}
   m_Layer: 0
   m_Name: background slide 5
   m_TagString: Untagged
@@ -306,7 +305,7 @@ Transform:
   m_GameObject: {fileID: 71118215}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.0732, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 88.5, y: 1.9, z: 0}
   m_LocalScale: {x: 12.094803, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -364,7 +363,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &71118218
+--- !u!114 &71118219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,11 +372,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 71118215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.5
 --- !u!1 &102974718
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102974720}
   - component: {fileID: 102974719}
+  - component: {fileID: 102974721}
   m_Layer: 0
   m_Name: plant (1)
   m_TagString: Untagged
@@ -456,12 +455,25 @@ Transform:
   m_GameObject: {fileID: 102974718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.15101, y: 0.02890013, z: 0}
+  m_LocalPosition: {x: 99.15101, y: 0.028900266, z: 0}
   m_LocalScale: {x: 9.03453, y: 6.77175, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102974721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102974718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &138002813
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +625,7 @@ Transform:
   m_GameObject: {fileID: 242955482}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9020997, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 1.78, y: 1.9, z: 0}
   m_LocalScale: {x: 5.714859, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -680,11 +692,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 242955482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &278059670
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278059672}
   - component: {fileID: 278059671}
-  - component: {fileID: 278059673}
+  - component: {fileID: 278059674}
   m_Layer: 0
   m_Name: vine
   m_TagString: Untagged
@@ -764,13 +775,13 @@ Transform:
   m_GameObject: {fileID: 278059670}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.799103, y: -2.8530006, z: 0}
-  m_LocalScale: {x: 9.202801, y: 4.3438, z: 1}
+  m_LocalPosition: {x: 18.799107, y: -2.8530004, z: 0}
+  m_LocalScale: {x: 9.202801, y: 4.3437996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &278059673
+--- !u!114 &278059674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -779,11 +790,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 278059670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &282637934
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 300989224}
   - component: {fileID: 300989223}
+  - component: {fileID: 300989225}
   m_Layer: 0
   m_Name: 'plant '
   m_TagString: Untagged
@@ -966,12 +977,25 @@ Transform:
   m_GameObject: {fileID: 300989222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 72.077614, y: -0.41860017, z: 0}
+  m_LocalPosition: {x: 72.07762, y: -0.41859996, z: 0}
   m_LocalScale: {x: 11.750131, y: 9.532251, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300989225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300989222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &312035834
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +1006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312035836}
   - component: {fileID: 312035835}
-  - component: {fileID: 312035837}
+  - component: {fileID: 312035838}
   m_Layer: 0
   m_Name: vine 2
   m_TagString: Untagged
@@ -1051,13 +1075,13 @@ Transform:
   m_GameObject: {fileID: 312035834}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.139105, y: -2.2930002, z: 0}
-  m_LocalScale: {x: 9.202801, y: 4.3438, z: 1}
+  m_LocalPosition: {x: 21.139109, y: -2.293, z: 0}
+  m_LocalScale: {x: 9.202801, y: 4.3437996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &312035837
+--- !u!114 &312035838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1066,11 +1090,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 312035834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &412664815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 428451477}
   - component: {fileID: 428451476}
+  - component: {fileID: 428451478}
   m_Layer: 0
   m_Name: mushroom-red (2)
   m_TagString: Untagged
@@ -1195,12 +1219,25 @@ Transform:
   m_GameObject: {fileID: 428451475}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 94.92961, y: -0.18770035, z: 0}
-  m_LocalScale: {x: 12.84502, y: 10.97054, z: 1}
+  m_LocalPosition: {x: 94.92961, y: -0.18770012, z: 0}
+  m_LocalScale: {x: 12.845024, y: 10.97054, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428451478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428451475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,11 +1625,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.04
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.84
+      value: 3.63
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1702,7 +1739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904423176}
   - component: {fileID: 904423175}
-  - component: {fileID: 904423177}
+  - component: {fileID: 904423178}
   m_Layer: 0
   m_Name: mushroom-red
   m_TagString: Untagged
@@ -1771,13 +1808,13 @@ Transform:
   m_GameObject: {fileID: 904423174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.299105, y: -0.34300032, z: 0}
-  m_LocalScale: {x: 8.118989, y: 6.5069804, z: 1}
+  m_LocalPosition: {x: 10.6, y: -0.14000022, z: 0}
+  m_LocalScale: {x: 8.11899, y: 6.5069804, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &904423177
+--- !u!114 &904423178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1786,11 +1823,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 904423174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &955206820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,7 +1837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955206821}
   - component: {fileID: 955206822}
-  - component: {fileID: 955206823}
+  - component: {fileID: 955206824}
   m_Layer: 0
   m_Name: background slide 2
   m_TagString: Untagged
@@ -1818,7 +1854,7 @@ Transform:
   m_GameObject: {fileID: 955206820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.700003, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 23.3, y: 1.9, z: 0}
   m_LocalScale: {x: 11.358753, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1876,7 +1912,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &955206823
+--- !u!114 &955206824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1885,11 +1921,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 955206820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.5
 --- !u!1 &962059945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,7 +1935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 962059946}
   - component: {fileID: 962059947}
-  - component: {fileID: 962059948}
+  - component: {fileID: 962059949}
   m_Layer: 0
   m_Name: background slide 1
   m_TagString: Untagged
@@ -1917,7 +1952,7 @@ Transform:
   m_GameObject: {fileID: 962059945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9020997, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 1.78, y: 1.9, z: 0}
   m_LocalScale: {x: 11.358753, y: 6.285915, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1975,7 +2010,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &962059948
+--- !u!114 &962059949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1984,11 +2019,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 962059945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.5
 --- !u!1 &1055403411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,7 +2050,7 @@ Transform:
   m_GameObject: {fileID: 1055403411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.1804, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 88.5, y: 1.9, z: 0}
   m_LocalScale: {x: 6.0949, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2083,11 +2117,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055403411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &1090979036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6385,7 +6418,7 @@ Transform:
   m_GameObject: {fileID: 1129864236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.300003, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 45, y: 1.9, z: 0}
   m_LocalScale: {x: 5.714859, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6452,11 +6485,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1129864236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!4 &1157533235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
@@ -6472,6 +6504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167667258}
   - component: {fileID: 1167667257}
+  - component: {fileID: 1167667259}
   m_Layer: 0
   m_Name: mushroom-brown
   m_TagString: Untagged
@@ -6540,12 +6573,25 @@ Transform:
   m_GameObject: {fileID: 1167667256}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.15911, y: -0.31300074, z: 0}
+  m_LocalPosition: {x: 76.15911, y: -0.31300053, z: 0}
   m_LocalScale: {x: 10.7832, y: 6.9389, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167667259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167667256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &1180459122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,7 +6602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180459124}
   - component: {fileID: 1180459123}
-  - component: {fileID: 1180459125}
+  - component: {fileID: 1180459126}
   m_Layer: 0
   m_Name: plant
   m_TagString: Untagged
@@ -6625,13 +6671,13 @@ Transform:
   m_GameObject: {fileID: 1180459122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.279102, y: -0.2530003, z: 0}
-  m_LocalScale: {x: 5.77934, y: 5.3185415, z: 1}
+  m_LocalPosition: {x: 33.279102, y: -0.2530001, z: 0}
+  m_LocalScale: {x: 5.7793403, y: 5.3185415, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1180459125
+--- !u!114 &1180459126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6640,11 +6686,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180459122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &1197836726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,7 +6717,7 @@ Transform:
   m_GameObject: {fileID: 1197836726}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.700003, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 23.3, y: 1.9, z: 0}
   m_LocalScale: {x: 5.714859, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6739,11 +6784,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1197836726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &1213228360
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,7 +6798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1213228362}
   - component: {fileID: 1213228361}
-  - component: {fileID: 1213228363}
+  - component: {fileID: 1213228364}
   m_Layer: 0
   m_Name: vine 3
   m_TagString: Untagged
@@ -6823,13 +6867,13 @@ Transform:
   m_GameObject: {fileID: 1213228360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.239105, y: -2.8130007, z: 0}
-  m_LocalScale: {x: 5.4225016, y: 2.9868512, z: 1}
+  m_LocalPosition: {x: 57.239117, y: -2.8130004, z: 0}
+  m_LocalScale: {x: 5.4225025, y: 2.9868512, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1213228363
+--- !u!114 &1213228364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6838,11 +6882,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1213228360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!4 &1219512782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
@@ -6858,7 +6901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248317128}
   - component: {fileID: 1248317127}
-  - component: {fileID: 1248317129}
+  - component: {fileID: 1248317130}
   m_Layer: 0
   m_Name: vine 4
   m_TagString: Untagged
@@ -6928,12 +6971,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 56.459103, y: -3.7330003, z: 0}
-  m_LocalScale: {x: 5.4225016, y: 2.9868512, z: 1}
+  m_LocalScale: {x: 5.4225025, y: 2.9868512, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1248317129
+--- !u!114 &1248317130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6942,11 +6985,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248317126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1001 &1299007982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6961,7 +7003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.848425
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7014,11 +7056,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.22
+      value: 9.74
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.81
+      value: 4.44
       objectReference: {fileID: 0}
     - target: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7241,7 +7283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527726526}
   - component: {fileID: 1527726525}
-  - component: {fileID: 1527726527}
+  - component: {fileID: 1527726528}
   m_Layer: 0
   m_Name: mushroom-red 2
   m_TagString: Untagged
@@ -7310,13 +7352,13 @@ Transform:
   m_GameObject: {fileID: 1527726524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.159105, y: 0.016999178, z: 0}
+  m_LocalPosition: {x: 19.159107, y: 0.016999396, z: 0}
   m_LocalScale: {x: 8.152597, y: 6.9822884, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1527726527
+--- !u!114 &1527726528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7325,11 +7367,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1527726524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &1661680872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7340,6 +7381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661680874}
   - component: {fileID: 1661680873}
+  - component: {fileID: 1661680875}
   m_Layer: 0
   m_Name: mushroom-brown (1)
   m_TagString: Untagged
@@ -7408,12 +7450,25 @@ Transform:
   m_GameObject: {fileID: 1661680872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90.16911, y: 0.26699927, z: 0}
-  m_LocalScale: {x: 8.45381, y: 7.362981, z: 1}
+  m_LocalPosition: {x: 90.16911, y: 0.26699936, z: 0}
+  m_LocalScale: {x: 8.453812, y: 7.3629804, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661680875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661680872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &1664325846
 GameObject:
   m_ObjectHideFlags: 0
@@ -7424,7 +7479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664325847}
   - component: {fileID: 1664325848}
-  - component: {fileID: 1664325849}
+  - component: {fileID: 1664325850}
   m_Layer: 0
   m_Name: background slide 4
   m_TagString: Untagged
@@ -7441,7 +7496,7 @@ Transform:
   m_GameObject: {fileID: 1664325846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.520004, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 66, y: 1.9, z: 0}
   m_LocalScale: {x: 11.358753, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7499,7 +7554,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1664325849
+--- !u!114 &1664325850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7508,11 +7563,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1664325846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.5
 --- !u!1 &1670131895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7523,7 +7577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670131897}
   - component: {fileID: 1670131896}
-  - component: {fileID: 1670131898}
+  - component: {fileID: 1670131899}
   m_Layer: 0
   m_Name: house
   m_TagString: Untagged
@@ -7592,13 +7646,13 @@ Transform:
   m_GameObject: {fileID: 1670131895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.779106, y: -1.4029999, z: 0}
-  m_LocalScale: {x: 3.7747045, y: 3.7438693, z: 1}
+  m_LocalPosition: {x: 57.03, y: 0.90999997, z: 0}
+  m_LocalScale: {x: 3.7747054, y: 3.7438693, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1670131898
+--- !u!114 &1670131899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7607,11 +7661,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670131895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.4
 --- !u!1 &1675035509
 GameObject:
   m_ObjectHideFlags: 0
@@ -7622,6 +7675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675035511}
   - component: {fileID: 1675035510}
+  - component: {fileID: 1675035512}
   m_Layer: 0
   m_Name: mushroom-red (1)
   m_TagString: Untagged
@@ -7690,12 +7744,25 @@ Transform:
   m_GameObject: {fileID: 1675035509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.869102, y: 0.2769995, z: 0}
-  m_LocalScale: {x: 10.11468, y: 10.38667, z: 1}
+  m_LocalPosition: {x: 34.91, y: 0.08000006, z: 0}
+  m_LocalScale: {x: 10.114682, y: 10.386669, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1675035512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675035509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1 &1789019701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7869,7 +7936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1895560969}
   - component: {fileID: 1895560970}
-  - component: {fileID: 1895560971}
+  - component: {fileID: 1895560972}
   m_Layer: 0
   m_Name: background slide 3
   m_TagString: Untagged
@@ -7886,7 +7953,7 @@ Transform:
   m_GameObject: {fileID: 1895560968}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.300003, y: 1.7356997, z: 0}
+  m_LocalPosition: {x: 45, y: 1.9, z: 0}
   m_LocalScale: {x: 11.358753, y: 6.285915, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7944,7 +8011,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1895560971
+--- !u!114 &1895560972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7953,11 +8020,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1895560968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c98503764bb9f47b192a429ec00740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  parallaxEffect: 0.5
+  parallaxFactor: 0.5
 --- !u!4 &1919579303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 43879542995025293, guid: 43376a0d3aae19243aa4f37301b30665, type: 3}
@@ -14868,6 +14934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135928647}
   - component: {fileID: 2135928646}
+  - component: {fileID: 2135928648}
   m_Layer: 0
   m_Name: vine (1)
   m_TagString: Untagged
@@ -14937,11 +15004,24 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 75.30911, y: -1.3629999, z: 0}
-  m_LocalScale: {x: 3.8412533, y: 2.40255, z: 1}
+  m_LocalScale: {x: 3.8412542, y: 2.40255, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138002814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135928648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135928645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0923d58510480c441978d84a13d172f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.4
 --- !u!1001 &770775549587878040
 PrefabInstance:
   m_ObjectHideFlags: 0

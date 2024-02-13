@@ -12,7 +12,8 @@ public class itemCollector : MonoBehaviour
     {
        if (collision.gameObject.CompareTag("Apple"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<Animator>().Play("Collected");
+            Destroy(collision.gameObject, 1.05f);
             apples++;
             applesText.text = "Apples: " + apples;
         }

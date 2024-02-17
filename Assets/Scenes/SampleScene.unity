@@ -516,6 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78587804}
   - component: {fileID: 78587805}
+  - component: {fileID: 78587806}
   m_Layer: 0
   m_Name: AttackArea
   m_TagString: Untagged
@@ -567,10 +568,10 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -582,10 +583,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5, y: 0.75}
-      - {x: 0.5, y: 0}
-      - {x: 1.5, y: -0.75}
+    - - {x: 0.99918425, y: 0.16718382}
+      - {x: 0.13819653, y: -0.27168012}
+      - {x: 0.13969634, y: 0.19284327}
   m_UseDelaunayMesh: 0
+--- !u!114 &78587806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78587803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51124929f1af6b4fa4e593228fb5769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &102974718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,7 +1641,6 @@ GameObject:
   - component: {fileID: 743329126}
   - component: {fileID: 743329129}
   - component: {fileID: 743329132}
-  - component: {fileID: 743329131}
   - component: {fileID: 743329130}
   m_Layer: 0
   m_Name: Player
@@ -1828,18 +1840,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &743329131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743329123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51124929f1af6b4fa4e593228fb5769, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &743329132
 MonoBehaviour:
   m_ObjectHideFlags: 0

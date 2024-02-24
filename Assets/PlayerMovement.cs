@@ -50,6 +50,19 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("walking", false);
         }
+        if (rbAva.velocity.y > .1f)
+        {
+            anim.SetBool("jumping", true);
+        }
+        else if (rbAva.velocity.y < -.1f)
+        {
+            anim.SetBool("falling", true);
+        }
+        else
+        {
+            anim.SetBool("jumping", false);
+            anim.SetBool("falling", false);
+        }
     }
 
     private bool IsGrounded()

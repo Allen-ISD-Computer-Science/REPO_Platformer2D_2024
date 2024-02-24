@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private float dirX = 0f;
 
+    [SerializeField] private Transform attackBox;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -40,11 +42,13 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("walking", true);
             sprite.flipX = false;
+            attackBox.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (dirX < 0f)
         {
             anim.SetBool("walking", true);
             sprite.flipX = true;
+            attackBox.rotation = Quaternion.Euler(0, 180, 0);
         }
         else
         {

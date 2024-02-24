@@ -1734,6 +1734,7 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  attackBox: {fileID: 78587804}
 --- !u!61 &743329127
 BoxCollider2D:
   m_ObjectHideFlags: 0

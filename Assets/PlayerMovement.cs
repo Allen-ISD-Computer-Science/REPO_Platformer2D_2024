@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D coll;
     private Animator anim;
     private float dirX = 0f;
-
+    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float jumpForce = 9f;    
     [SerializeField] private Transform attackBox;
 
 
@@ -27,11 +28,11 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
-        rbAva.velocity = new Vector2(dirX * 7f, rbAva.velocity.y);
+        rbAva.velocity = new Vector2(dirX * moveSpeed, rbAva.velocity.y);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rbAva.velocity = new Vector2(rbAva.velocity.x, 9f);
+            rbAva.velocity = new Vector2(rbAva.velocity.x, jumpForce);
             }
         UpdateAnimationState();
     }
@@ -53,6 +54,19 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("walking", false);
+        }
+        if (rbAva.velocity.y > .1f)
+        {
+            anim.SetBool("jumping", true);
+        }
+        else if (rbAva.velocity.y < -.1f)
+        {
+            anim.SetBool("falling", true);
+        }
+        else
+        {
+            anim.SetBool("jumping", false);
+            anim.SetBool("falling", false);
         }
     }
 

@@ -1642,6 +1642,7 @@ GameObject:
   - component: {fileID: 743329129}
   - component: {fileID: 743329132}
   - component: {fileID: 743329130}
+  - component: {fileID: 743329133}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1734,6 +1735,8 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  moveSpeed: 7
+  jumpForce: 9
   attackBox: {fileID: 78587804}
 --- !u!61 &743329127
 BoxCollider2D:
@@ -1853,6 +1856,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c60471020faff4d9df37dbf561fef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &743329133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743329123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef80d8a8de123442898226a77c6da6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!1001 &794559050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29064,7 +29080,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 26
-      m_TileSpriteIndex: 26
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -29134,7 +29150,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 21
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -29144,7 +29160,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -29154,7 +29170,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 23
-      m_TileSpriteIndex: 23
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -29665,18 +29681,18 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 857365937, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 844177418, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 294760288, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -60070124, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: -517207410, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
+    m_Data: {fileID: -60070124, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 294760288, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 844177418, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
   - m_RefCount: 2642
     m_Data: {fileID: 1914050249, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
   - m_RefCount: 2
@@ -29687,10 +29703,10 @@ Tilemap:
     m_Data: {fileID: 424262319, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1520271633, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 857365937, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -517207410, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -164320419, guid: 3a6f603276eca1e4dab29831a1cfd471, type: 3}
   - m_RefCount: 23

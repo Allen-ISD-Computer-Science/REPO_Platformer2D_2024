@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
 
-    [SerializeField] private int health = 100;
+    [SerializeField] private int healthPoints = 100;
 
     private int MAX_HEALTH = 100;
 
@@ -14,6 +14,17 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //test damage
+        if (Input.GetKeyDown(KeyCode.F1)) {
+            Damage(10);
+        }
+
+
+        //test health
+        if (Input.GetKeyDown(KeyCode.F2)) {
+            Heal(10);
+        }
+
         
     }
 
@@ -21,9 +32,9 @@ public class PlayerHealth : MonoBehaviour
         if(amount < 0) {
             throw new System.ArgumentOutOfRangeException("Cannot have negative damage");
         }
-        this.health -= amount;
+        this.healthPoints -= amount;
 
-        if (health <= 0) {
+        if (healthPoints <= 0) {
             Die();
         }
     }
@@ -33,17 +44,18 @@ public class PlayerHealth : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
         }
         
-        bool overMaxHealth = health + amount > MAX_HEALTH;
+        bool overMaxHealth = healthPoints + amount > MAX_HEALTH;
 
         if(overMaxHealth){
-            this.health = MAX_HEALTH;
+            this.healthPoints = MAX_HEALTH;
         } else {
-            this.health += amount;
+            this.healthPoints += amount;
         }
     
 }
 
 private void Die() {
     Debug.Log("I am dead");
+    //Destroy(gameObject);
     }
 }

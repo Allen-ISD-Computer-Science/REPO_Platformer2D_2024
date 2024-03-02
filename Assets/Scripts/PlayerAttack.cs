@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)) {
+            Debug.Log("I'm gonna attack");
             Attack();
         }
         
@@ -33,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
 
             if(timer >= timeToAttack) {
                 timer = 0;
+                Debug.Log("I've finished my attack");
                 attacking = false;
                 attackArea.SetActive(attacking);
 
@@ -45,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack() {
         attacking = true;
+        Debug.Log("Attacking time");
         attackArea.SetActive(attacking);
         
     }

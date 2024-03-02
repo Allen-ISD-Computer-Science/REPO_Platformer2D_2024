@@ -2,33 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
-
     [SerializeField] private int healthPoints = 100;
-
-    private int MAX_HEALTH = 100;
+    [SerializeField] private int MAX_HEALTH = 100;
 
     // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
     {
-        //test damage
-        if (Input.GetKeyDown(KeyCode.F1)) {
-            Damage(10);
-        }
-
-
-        //test health
-        if (Input.GetKeyDown(KeyCode.F2)) {
-            Heal(10);
-        }
 
         
     }
 
     public void Damage(int amount) {
+        //Debug.Log("Ouch!");
         if(amount < 0) {
             throw new System.ArgumentOutOfRangeException("Cannot have negative damage");
         }
@@ -55,7 +44,7 @@ public class Health : MonoBehaviour
 }
 
 private void Die() {
-    Debug.Log("I am dead");
-    //Destroy(gameObject);
+    Debug.Log("Enemy Dead");
+    Destroy(gameObject);
     }
 }

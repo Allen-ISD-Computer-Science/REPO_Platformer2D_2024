@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 9f;    
     [SerializeField] private Transform attackBox;
 
+    public float jumpStartTime;
+    private float jumpTime;
+    private bool isJumping;
 
     // Start is called before the first frame update
     private void Start()
@@ -32,8 +35,28 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            isJumping = true;
+            jumpTime = jumpStartTime;
             rbAva.velocity = new Vector2(rbAva.velocity.x, jumpForce);
+        }
+        if (Input.GetButton("Jump") && isJumping == true)
+        {
+            if (jumpTime > 0)
+            {
+                rbAva.velocity = new Vector2(rbAva.velocity.x, jumpForce);
+                jumpTime -= Time.deltaTime;
             }
+        }
+        else
+        {
+            isJumping = false;
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            isJumping = false;
+        }
+
         UpdateAnimationState();
     }
 

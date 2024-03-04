@@ -8,8 +8,8 @@ public class PlayerAttack : MonoBehaviour
     
     private bool attacking = false;
 
-    private float timeToAttack = 1f;
-    float timer = 0f;
+    //[SerializeField] private float timeToAttack = 1f;
+    //float timer = 0f;
 
     private Animator anim;
 
@@ -24,32 +24,42 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log("I'm gonna attack");
-            Attack();
+            //Debug.Log("I'm gonna attack");
+            attacking = true;
+            // Attack();
         }
         
+        /*
+        old method involved using timer to finish attack, this has now been replaced with using events in the animation
         if (attacking) {
 
             timer += Time.deltaTime;
 
             if(timer >= timeToAttack) {
                 timer = 0;
-                Debug.Log("I've finished my attack");
+                //Debug.Log("I've finished my attack");
                 attacking = false;
                 attackArea.SetActive(attacking);
 
             }
         }
+        */
 
         UpdateAnimationState();
         
     }
 
+//called when animation reaches event frame when sword hits enemy
     private void Attack() {
-        attacking = true;
-        Debug.Log("Attacking time");
+        //Debug.Log("Attacking time");
         attackArea.SetActive(attacking);
         
+    }
+
+//called when animation finishes
+    private void FinishAttack() {
+        attacking = false;
+        attackArea.SetActive(attacking);
     }
 
     private void UpdateAnimationState()

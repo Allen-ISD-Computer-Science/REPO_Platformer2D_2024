@@ -13,10 +13,10 @@ public class PlayerAttack : MonoBehaviour
 
     private Animator anim;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update 
     void Start()
     {
-        attackArea = transform.GetChild(2).gameObject;
+        attackArea = transform.GetChild(1).gameObject;
         anim = GetComponent<Animator>();
     }
 

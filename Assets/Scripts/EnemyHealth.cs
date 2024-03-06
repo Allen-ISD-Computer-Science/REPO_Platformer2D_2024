@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
 }
 
 private void Die() {
-    Debug.Log("Enemy Dead");
+    //Debug.Log("Enemy Dead");
     Destroy(gameObject);
     }
 }

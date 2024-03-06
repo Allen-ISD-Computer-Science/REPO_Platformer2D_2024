@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51124929f1af6b4fa4e593228fb5769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &102974718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,7 +2614,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &743329129
@@ -2662,6 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c60471020faff4d9df37dbf561fef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToAttack: 1
 --- !u!114 &743329133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3478,8 +3480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd00955ee37c67a4bbbb797da3297d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
-  MAX_HEALTH: 100
+  healthPoints: 30
+  MAX_HEALTH: 30
 --- !u!61 &1013971436
 BoxCollider2D:
   m_ObjectHideFlags: 0

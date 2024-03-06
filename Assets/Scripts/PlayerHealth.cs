@@ -5,14 +5,18 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
 
-    [SerializeField] private int healthPoints = 100;
+    [SerializeField] private int healthPoints = 3;
     [SerializeField] private Transform cam;
     [SerializeField] private Transform background;
-    [SerializeField] private int MAX_HEALTH = 100;
+    [SerializeField] private int MAX_HEALTH = 3;
 
     // Start is called before the first frame update
 
+    
+    
     // Update is called once per frame
+    //stuff in update only ever used for testing
+    /*
     void Update()
     {
         //test damage
@@ -28,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
         
     }
+    */
 
     public void Damage(int amount) {
         if(amount < 0) {

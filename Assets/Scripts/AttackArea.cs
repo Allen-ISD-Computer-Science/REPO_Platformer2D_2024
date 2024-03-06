@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-    [SerializeField] private int damage = 3;
+    [SerializeField] private int attackPower = 1;
 
+    //basic enimies and adavanced enimies are treated seperatly due to being differnt classes
+    //attack power only matter for advanced enimies
     private void OnTriggerEnter2D(Collider2D collider) {    
         //Debug.Log("Attack has been triggered!!!!");
-        if(collider.GetComponent<EnemyHealth>() != null) {
+        
+        if(collider.GetComponent<BasicEnemyHealth>() != null) {
             //Debug.Log("I hit you!!!!");
-            EnemyHealth health = collider.GetComponent<EnemyHealth>();
-            health.Damage(damage);
+            BasicEnemyHealth health = collider.GetComponent<BasicEnemyHealth>();
+            health.Damage();
+        }
+
+        if(collider.GetComponent<AdvancedEnemyHealth>() != null) {
+            //Debug.Log("I hit you!!!!");
+            AdvancedEnemyHealth health = collider.GetComponent<AdvancedEnemyHealth>();
+            health.Damage(attackPower);
         }
 
     }

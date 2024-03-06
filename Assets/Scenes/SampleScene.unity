@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51124929f1af6b4fa4e593228fb5769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  attackPower: 1
 --- !u!1 &102974718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2292,7 @@ GameObject:
   - component: {fileID: 1013971434}
   - component: {fileID: 1013971433}
   - component: {fileID: 1013971436}
-  - component: {fileID: 1013971435}
+  - component: {fileID: 1013971437}
   m_Layer: 6
   m_Name: Dummy
   m_TagString: Untagged
@@ -2367,20 +2367,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1013971435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013971432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd00955ee37c67a4bbbb797da3297d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPoints: 30
-  MAX_HEALTH: 30
 --- !u!61 &1013971436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2426,6 +2412,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.46875, y: 2.09375}
   m_EdgeRadius: 0
+--- !u!114 &1013971437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013971432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5fdbb0c960b5e4092aab583c6a429e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 3
 --- !u!1 &1055403411
 GameObject:
   m_ObjectHideFlags: 0

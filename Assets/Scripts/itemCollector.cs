@@ -16,7 +16,7 @@ public class itemCollector : MonoBehaviour
             collision.gameObject.GetComponent<Animator>().Play("Collected");
             Destroy(collision.gameObject, 1.05f);
             apples++;
-            applesText.text = "Apples: " + apples;
+            applesText.text = "Apples: " + apples +"/6";
         }
     }
 }

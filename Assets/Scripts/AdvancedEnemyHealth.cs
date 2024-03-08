@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AdvancedEnemyHealth : MonoBehaviour
 {
-    private bool damaged = false;
     [SerializeField] private int healthPoints = 3;
 
 

@@ -1,33 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
 
-    [SerializeField] private int healthPoints = 100;
     [SerializeField] private Transform cam;
     [SerializeField] private Transform background;
-    [SerializeField] private int MAX_HEALTH = 100;
+    
+    [SerializeField] private int healthPoints = 3;
+    [SerializeField] private int MAX_HEALTH = 3;
+
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     // Start is called before the first frame update
 
-    // Update is called once per frame
+    
+    
+    // Update is called once per frame 
     void Update()
-    {
-        //test damage
-        if (Input.GetKeyDown(KeyCode.F1)) {
-            Damage(10);
+    {       
+        foreach (Image img in hearts)
+        {
+            img.sprite = emptyHeart;
         }
-
-
-        //test health
-        if (Input.GetKeyDown(KeyCode.F2)) {
-            Heal(10);
+        for (int i = 0; i < healthPoints; i++)
+        {
+            hearts[i].sprite = fullHeart;
         }
-
         
     }
+
 
     public void Damage(int amount) {
         if(amount < 0) {

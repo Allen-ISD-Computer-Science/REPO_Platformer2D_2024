@@ -3190,6 +3190,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1131860479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131860480}
+  m_Layer: 7
+  m_Name: Obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131860480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131860479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.792168, y: 10.969255, z: -0.020698018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2143412163}
+  - {fileID: 1526939302}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220749561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3505,7 @@ GameObject:
   - component: {fileID: 1526939302}
   - component: {fileID: 1526939301}
   - component: {fileID: 1526939300}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Invisible Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3584,12 +3617,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526939299}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.9, y: 15.3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.892168, y: 4.3307447, z: 0.020698018}
   m_LocalScale: {x: 1.6949184, y: 17.986814, z: 1.6949184}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1131860480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529644662
 GameObject:
@@ -48660,7 +48693,11 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 128
   raycastDistance: 1.5
+  obstacleDistance: 0.1
   speed: 4
 --- !u!212 &1974926680
 SpriteRenderer:
@@ -76274,7 +76311,7 @@ GameObject:
   - component: {fileID: 2143412163}
   - component: {fileID: 2143412162}
   - component: {fileID: 2143412161}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Invisible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76386,12 +76423,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143412160}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89.6, y: 16.62, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -115.39216, y: 5.6507454, z: 0.020698018}
   m_LocalScale: {x: 1.6949184, y: 17.986814, z: 1.6949184}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1131860480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -76402,11 +76439,10 @@ SceneRoots:
   - {fileID: 25446397}
   - {fileID: 1892362009}
   - {fileID: 1680022662}
-  - {fileID: 1526939302}
   - {fileID: 184510518}
   - {fileID: 348858899}
   - {fileID: 1034998046}
   - {fileID: 525163076}
   - {fileID: 1057904718}
-  - {fileID: 2143412163}
   - {fileID: 1974926681}
+  - {fileID: 1131860480}

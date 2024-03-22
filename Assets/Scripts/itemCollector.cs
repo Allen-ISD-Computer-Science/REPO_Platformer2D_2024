@@ -5,18 +5,19 @@ using UnityEngine.UI;
 
 public class itemCollector : MonoBehaviour
 {
-    private int apples = 0;
+    public int apples = 0;
 
     [SerializeField] private Text applesText;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.gameObject.CompareTag("Apple"))
+        if (collision.gameObject.CompareTag("Apple"))
         {
-            
+
             collision.gameObject.GetComponent<Animator>().Play("Collected");
             Destroy(collision.gameObject, 1.05f);
             apples++;
-            applesText.text = "Apples: " + apples +"/6";
+            applesText.text = "Apples: " + apples + "/6";
         }
-    }
+    }  
 }
+

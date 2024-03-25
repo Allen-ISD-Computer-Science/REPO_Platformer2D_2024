@@ -1102,12 +1102,12 @@ GameObject:
   - component: {fileID: 192534328}
   - component: {fileID: 192534327}
   m_Layer: 0
-  m_Name: GET OVER HERE
+  m_Name: playerDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &192534326
 Transform:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4412bae9618588d4e8664ef575c456d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6.4, y: 3.69}
@@ -2115,7 +2115,7 @@ Transform:
   m_GameObject: {fileID: 525163067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.35, y: 9.17, z: -0.1105929}
+  m_LocalPosition: {x: 27.01, y: 7.97, z: -0.1105929}
   m_LocalScale: {x: 4.3555923, y: 3.6620297, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48808,8 +48808,10 @@ MonoBehaviour:
     m_Bits: 256
   raycastDistance: 1.5
   obstacleDistance: 0.1
-  playerDetectDistance: 0
+  playerDetectDistance: 4
   speed: 4
+  detectionPauseTime: 1
+  alert: {fileID: 192534325}
 --- !u!212 &1974926680
 SpriteRenderer:
   m_ObjectHideFlags: 0

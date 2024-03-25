@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public PatrolState patrolState;
     public PlayerDetectedState playerDetectedState;
+    public ChargeState chargeState;
 
     public Rigidbody2D rb;
     public Transform ledgeDetector; 
@@ -17,12 +18,15 @@ public class Enemy : MonoBehaviour
     public float raycastDistance, obstacleDistance, playerDetectDistance;
     public float speed;
     public float detectionPauseTime;
+    public float stateTime;         //Keep track of time when we enter a new state
+    public float playerDetectedWaitTime = 1;
+    public float chargeTime;
+    public float chargeSpeed;
 
     public GameObject alert;
 
-    public bool facingRight = true;
+    public int facingRight = 1;
     
-    private bool playerDetected;
     #endregion
 
 
@@ -32,6 +36,7 @@ public class Enemy : MonoBehaviour
     {
         patrolState = new PatrolState(this, "patrol");
         playerDetectedState = new PlayerDetectedState(this, "playerDetected");
+        chargeState = new ChargeState(this, "charge");
 
         currentState = patrolState;
         currentState.Enter();
@@ -62,7 +67,7 @@ public class Enemy : MonoBehaviour
 
    public bool CheckForPlayer()
     {
-        RaycastHit2D hitPlayer = Physics2D.Raycast(ledgeDetector.position, facingRight? Vector2.right : Vector2.left, playerDetectDistance, playerLayer);
+        RaycastHit2D hitPlayer = Physics2D.Raycast(ledgeDetector.position, facingRight == 1? Vector2.right : Vector2.left, playerDetectDistance, playerLayer);
         if (hitPlayer.collider == true)
             return true;
         else
@@ -80,11 +85,12 @@ public class Enemy : MonoBehaviour
         currentState.Exit();
         currentState = newState;
         currentState.Enter();
+        stateTime = Time.time;
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawRay(ledgeDetector.position, (facingRight ? Vector2.right : Vector2.left) * playerDetectDistance);
+        Gizmos.DrawRay(ledgeDetector.position, (facingRight == 1? Vector2.right : Vector2.left) * playerDetectDistance);
     }
     #endregion
 }

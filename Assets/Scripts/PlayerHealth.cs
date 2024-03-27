@@ -8,18 +8,19 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] private Transform cam;
     [SerializeField] private Transform background;
-    
+    //health parmeters
     [SerializeField] private int healthPoints = 3;
     [SerializeField] private int MAX_HEALTH = 3;
 
     public Image[] hearts;
+    //heart images
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
     // Start is called before the first frame update
 
     
-    
+    //updates healthbar
     // Update is called once per frame 
     void Update()
     {       
@@ -34,18 +35,19 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-
+//damage and healing
     public void Damage(int amount) {
         if(amount < 0) {
             throw new System.ArgumentOutOfRangeException("Cannot have negative damage");
         }
         this.healthPoints -= amount;
-
+    //death upon health being 0
         if (healthPoints <= 0) {
             Die();
         }
     }
 
+//healing (no current plans on use)
     public void Heal(int amount) {
         if(amount < 0) {
             throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
@@ -60,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
         }
     
 }
-
+//death destroys player
 private void Die() {
     Debug.Log("I am dead");
     cam.parent = null;

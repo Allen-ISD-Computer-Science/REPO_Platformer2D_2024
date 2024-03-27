@@ -18,7 +18,7 @@ if (collision.tag == "Player" && script.apples == 6)
         {
             // Player entered, so move level
            
-            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
